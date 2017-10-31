@@ -26,7 +26,7 @@ class Provider(BaseProvider):
             "name": name,
             "sex": sex,
             "address": self.generator.address(),
-            "mail": self.generator.free_email(),
+            "mail": self.generator.email(),
 
             #"password":self.generator.password()
             "birthdate": self.generator.date(),

@@ -17,9 +17,25 @@ localized = True
 
 class Provider(BaseProvider):
     safe_email_tlds = ('org', 'com', 'net')
-    free_email_domains = ('gmail.com', 'yahoo.com', 'hotmail.com')
+    free_email_domains = (
+        'gmail.com', 'gmail.com', 'gmail.com', 'gmail.com', 'gmail.com', 'gmail.com',
+        'gmail.com', 'yahoo.com', 'hotmail.com',         
+        'gmail.com', 'yahoo.com', 'hotmail.com',        
+        'gmail.com', 'yahoo.com', 'hotmail.com',         
+        'gmail.com', 'yahoo.com', 'hotmail.com',         
+        'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com',         
+        'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com',         
+        'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com', 
+        'aim.com', 'yandex.com', 'protonmail.com', 'zoho.com', 'ymail.com', 'mail.com', 'tutanota.com')
     tlds = (
-        'com', 'com', 'com', 'com', 'com', 'com', 'biz', 'info', 'net', 'org'
+        'com', 'com', 'com', 'com', 'com', 'com',        
+        'com', 'com', 'com', 'com', 'com', 'com',         
+        'com', 'com', 'com', 'com', 'com', 'com', 
+        'biz', 'info', 'net', 'org', 'co', 'io', 'me', 'top', 'eu', 'us',        
+        'biz', 'info', 'net', 'org', 'co', 'io', 'me', 'top', 'eu', 'us',
+        'biz', 'info', 'net', 'org', 'co', 'io', 'me', 'top', 'eu', 'us',
+        'ai', 'co.uk', 'cn', 'es', 'it', 'de', 'tv', 'mobi', 'fr'
+        'ai', 'co.uk', 'cn', 'es', 'it', 'de', 'tv', 'com.net.va', 'com.org.net.va'
     )
 
     uri_pages = (
