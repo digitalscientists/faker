@@ -30,12 +30,15 @@ class Provider(BaseProvider):
     tlds = (
         'com', 'com', 'com', 'com', 'com', 'com',        
         'com', 'com', 'com', 'com', 'com', 'com',         
-        'com', 'com', 'com', 'com', 'com', 'com', 
+        'com', 'com', 'com', 'com', 'com', 'com',
+        'org', 'edu', 'gov', 'uk', 'net', 'ca', 'de', 'jp', 'fr', 'au', 'us', 'ru', 'ch', 'it', 'nl', 'se', 'no', 'es', 'mil',
+        'org', 'edu', 'gov', 'uk', 'net', 'ca', 'de', 'jp', 'fr', 'au', 'us', 'ru', 'ch', 'it', 'nl', 'se', 'no', 'es', 'mil',
+        'org', 'edu', 'gov', 'uk', 'net', 'ca', 'de', 'jp', 'fr', 'au', 'us', 'ru', 'ch', 'it', 'nl', 'se', 'no', 'es', 'mil',
+        'org', 'edu', 'gov', 'uk', 'net', 'ca', 'de', 'jp', 'fr', 'au', 'us', 'ru', 'ch', 'it', 'nl', 'se', 'no', 'es', 'mil',
         'biz', 'info', 'net', 'org', 'co', 'io', 'me', 'top', 'eu', 'us',        
         'biz', 'info', 'net', 'org', 'co', 'io', 'me', 'top', 'eu', 'us',
-        'biz', 'info', 'net', 'org', 'co', 'io', 'me', 'top', 'eu', 'us',
-        'ai', 'co.uk', 'cn', 'es', 'it', 'de', 'tv', 'mobi', 'fr'
-        'ai', 'co.uk', 'cn', 'es', 'it', 'de', 'tv', 'com.net.va', 'com.org.net.va'
+        'ai', 'co.uk', 'cn', 'es', 'it', 'de', 'tv', 'mobi', 'fr',
+        'com.net.va', 'com.org.net.va'
     )
 
     uri_pages = (
@@ -91,7 +94,7 @@ class Provider(BaseProvider):
         return string
 
     @lowercase
-    def email(self):
+    def email(self, *args):
         pattern = self.random_element(self.email_formats)
         return "".join(self.generator.parse(pattern).split(" "))
 
